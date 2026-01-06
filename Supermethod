@@ -1,0 +1,22 @@
+class Person{
+    String name;
+    Person(String n){
+        name=n;
+    }
+}
+class Student extends Person {
+    int age;
+Student(String n, int a) {
+        super(n);       
+        age = a;
+    }
+void display() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student("Arjun", 20);
+        s1.display();
+    }
+}
