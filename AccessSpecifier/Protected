@@ -1,0 +1,14 @@
+class Parent {
+    protected int age = 20; 
+}
+class child extends Parent{
+void display() {
+        System.out.println("Age: " + age);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+     child c = new child();
+        c.display(); 
+    }
+}
