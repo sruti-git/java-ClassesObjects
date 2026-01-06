@@ -1,0 +1,19 @@
+class Student{
+    String name;
+    int age;
+    Student(String n,int a){
+        name=n;
+        age=a;
+    }
+    void study(){
+        System.out.println("name: "+name+" age: "+age);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Student s1=new Student("SRI",19);
+        Student s2=new Student("VICTORIYA",20);
+        s1.study();
+        s2.study();
+    }
+}
